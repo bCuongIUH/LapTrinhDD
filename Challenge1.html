@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Data 1
+        var markWeight1 = 78; // kg
+        var markHeight1 = 1.69; // meters
+
+        var johnWeight1 = 92; // kg
+        var johnHeight1 = 1.95; // meters
+
+        // Calculate BMIs
+        var markBMI1 = markWeight1 / (markHeight1 ** 2);
+        var johnBMI1 = johnWeight1 / (johnHeight1 ** 2);
+
+        // Determine if Mark has a higher BMI than John
+        var markHigherBMI1 = markBMI1 > johnBMI1;
+
+        // Data 2
+        var markWeight2 = 95; // kg
+        var markHeight2 = 1.88; // meters
+
+        var johnWeight2 = 85; // kg
+        var johnHeight2 = 1.76; // meters
+
+        // Calculate BMIs
+        var markBMI2 = markWeight2 / (markHeight2 ** 2);
+        var johnBMI2 = johnWeight2 / (johnHeight2 ** 2);
+        // Determine if Mark has a higher BMI than John
+        var markHigherBMI2 = markBMI2 > johnBMI2;
+
+        // Print results for both test data
+        console.log("Data 1 - Mark's BMI:", markBMI1);
+        console.log("Data 1 - John's BMI:", johnBMI1);
+        console.log("Data 1 - Kiem tra chi so BMI:", markHigherBMI1);
+
+        console.log("Data 2 - Mark's BMI:", markBMI2);
+        console.log("Data 2 - John's BMI:", johnBMI2);
+        console.log("Data 2 - Kiem tra chi so BMI :", markHigherBMI2);
+
+        //so sanh BMI
+        // if (markHigherBMI2 == true) {
+        //     return markBMI2;
+        // } else {
+        //     return false;
+        // }
+        //doc du lieu ra man hinh
+        document.write("Mark's BMI: ", markBMI1);
+        document.write("John's BMI: ", johnBMI1);
+        document.write("Mark has a higher BMI than John:", markHigherBMI1);
+    </script>
+</body>
+
+</html>
